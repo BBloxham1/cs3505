@@ -35,7 +35,11 @@ namespace cs3505
     private:
 
     // Students must decide what functions and variables are needed here.
+    vector<node> next_nodes;
+    std::string data;
 
+    node (const std::string & data);
+    ~node();
   };
 }
 		
