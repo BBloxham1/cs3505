@@ -35,11 +35,13 @@ namespace cs3505
     private:
 
     // Students must decide what functions and variables are needed here.
-    std::vector<node> next_nodes;
+    std::vector<node*> next_nodes;
     std::string data;
 
-    node (const std::string & data);
+    node (const std::string & data, const int capacity);
     ~node();
+
+    const int make_capacity();
   };
 }
 		

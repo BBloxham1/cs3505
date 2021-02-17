@@ -26,6 +26,8 @@ namespace cs3505
   string_set::string_set(int max_width)
   {
     // TODO:  Complete this constructor
+    this->max_width = max_width;
+    this->head = new node("");
   }
 
   
@@ -52,5 +54,36 @@ namespace cs3505
 
 
   /* Additional public and private helper function definitions needed here */
+  void string_set::add(const std::string &data){
+    // NEED TO FINISH THIS
+    if(contains(data))
+      return; 
+    node *node = new node (data);
+    node *current = head->next[0];
 
+    
+  }
+  bool string_set::contains(const std::string &data) const{
+    return false;
+  }
+
+  
+  const int string_set::rand_length(int maxlength){
+    int length = 1;
+    int operand = 1;
+    
+    while (length <= maxlength){
+      operand = std::rand() & 1;
+
+      if (operand == 1)
+	length += 1;
+
+      else
+	return length;
+    }
+
+    return maxlength;
+  }
+
+ 
 }

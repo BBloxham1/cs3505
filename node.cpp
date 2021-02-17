@@ -25,3 +25,8 @@
 
 // Students will decide how to implement the constructor, 
 // destructor, and any helper methods.
+
+cs3505:node::node (const std::string & data, const int capacity){
+  this->data = data;
+  this->next_nodes = new std::vector<node*>
+}

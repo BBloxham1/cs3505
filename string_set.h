@@ -52,7 +52,8 @@ namespace cs3505
     private:
 
       // You may add any private helper functions that you like.
-
+      const int rand_length(int maxlength);
+      const int string_compare(std::string first, std::string second);
   };
 
 }
