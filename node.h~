@@ -37,6 +37,7 @@ namespace cs3505
        // Students must decide what functions and variables are needed here.
        node ** next_nodes;
        std::string data;
+       int capacity;
     public:
 
        node (const std::string & data, const int capacity);

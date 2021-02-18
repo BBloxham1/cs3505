@@ -29,7 +29,6 @@ namespace cs3505
     this->max_width = max_width;
     this->head = new node("", max_width);
     this->current = head->next_nodes[max_width-1];
-    std::cout << current->data;
   }
 
   
@@ -60,9 +59,11 @@ namespace cs3505
     // NEED TO FINISH THIS
     if(contains(data))
       return; 
-    // node *node = new node (data, rand_length(this->max_width));
-    node *new_node = new node(data, 5);
-    
+
+    std::cout << "max_width: " << max_width << std::endl;
+    std::cout << "rand_length: " << rand_length(this->max_width) << std::endl;
+    node *new_node = new node (data, rand_length(this->max_width));
+       
   }
   bool cs3505::string_set::contains(const std::string &data) const{
     return false;
@@ -74,15 +75,15 @@ namespace cs3505
     int operand = 1;
     
     while (length <= maxlength){
-      operand = std::rand() & 1;
-
+      operand = std::rand() % 1;
+      std::cout << operand << std::endl;
       if (operand == 1)
 	length += 1;
 
       else
 	return length;
     }
-
+    
     return maxlength;
   }
 

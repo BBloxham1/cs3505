@@ -6,7 +6,7 @@
  */
 
 #include "node.h"
-
+#include <iostream>
 // By default, functions are not in a namespace.  They are not in any
 // class.  Symbols defined here are globally available.  We need to
 // qualify our function names so that you are definining our 
@@ -34,4 +34,5 @@ cs3505::node::node (const std::string & data, const int capacity){
       next_nodes[i] = NULL;
 
   this->capacity = capacity;
+
 }
