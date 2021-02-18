@@ -29,9 +29,7 @@
 cs3505::node::node (const std::string & data, const int capacity){
   this->data = data;
   next_nodes = new node*[capacity];
-
-  for (int i = 0; i < capacity; i++)
-      next_nodes[i] = NULL;
-
+  for (int i = 0; i < capacity; i++
+	 next_nodes[i] = NULL;
   this->capacity = capacity;
 }

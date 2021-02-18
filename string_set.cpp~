@@ -29,7 +29,6 @@ namespace cs3505
     this->max_width = max_width;
     this->head = new node("", max_width);
     this->current = head->next_nodes[max_width-1];
-    std::cout << current->data;
   }
 
   

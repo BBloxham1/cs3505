@@ -4,5 +4,6 @@
 
 int main()
 {
+  cs3505::string_set new_set;
   return 0;
 }
