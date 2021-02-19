@@ -76,7 +76,7 @@ namespace cs3505
     
     while (length <= maxlength){
       operand = std::rand() % 2;
-      std::cout << operand << std::endl;
+      std::cout << "why the fuck is operand " <<  operand << std::endl;
       if (operand == 1)
 	length += 1;
 

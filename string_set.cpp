@@ -60,8 +60,6 @@ namespace cs3505
     if(contains(data))
       return; 
 
-    std::cout << "max_width: " << max_width << std::endl;
-    std::cout << "rand_length: " << rand_length(this->max_width) << std::endl;
     node *new_node = new node (data, rand_length(this->max_width));
        
   }
@@ -75,8 +73,7 @@ namespace cs3505
     int operand = 1;
     
     while (length <= maxlength){
-      operand = std::rand() % 1;
-      std::cout << operand << std::endl;
+      operand = std::rand() % 2;
       if (operand == 1)
 	length += 1;
 
