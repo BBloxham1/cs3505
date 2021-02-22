@@ -15,6 +15,8 @@
 #include <iostream>  // For debugging, if needed.
 #include <vector>
 
+using namespace std;
+
 namespace cs3505
 {
   /*******************************************************
@@ -115,12 +117,10 @@ namespace cs3505
 
     // loop until the end
     while (true){
-      //std::cout << "head iterator: " << head_iterator <<  std::endl;
-      //std::cout << current_pointer <<  std::endl;
       // decrement and add to prior nodes if the current is null
       if  (current_pointer == NULL){
         head_iterator--;
-       current_pointer = current_node->next_nodes[head_iterator];
+        current_pointer = current_node->next_nodes[head_iterator];
         // this means the string set is empty 
         if  (current_pointer == NULL && head_iterator == 0)
           return false;
@@ -137,11 +137,12 @@ namespace cs3505
         else if(comparison < 0 && head_iterator != 0){
           head_iterator--;
           std::cout << "fuck your mom" << std::endl;
-         current_pointer = prior_nodes[head_iterator];
+          current_pointer = prior_nodes[head_iterator];
           std::cout << "also your dad" << std::endl;
+          cout << head_iterator << endl;
         }
 
-        else if(comparison < 0 && head_iterator == 0){
+        if(comparison < 0 && head_iterator == 0){
           std::cout << "hade it here" << std::endl;
           current_pointer = current_pointer->next_nodes[0];
         }
