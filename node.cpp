@@ -36,3 +36,7 @@ cs3505::node::node (const std::string & data, const int capacity){
   this->capacity = capacity;
 
 }
+
+cs3505::node::~node(){
+  
+}

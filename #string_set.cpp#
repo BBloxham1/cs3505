@@ -61,6 +61,10 @@ namespace cs3505
       return; 
 
     node *new_node = new node (data, rand_length(this->max_width));
+
+    
+
+    
        
   }
   bool cs3505::string_set::contains(const std::string &data) const{
