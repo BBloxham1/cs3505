@@ -8,10 +8,8 @@ int main()
   cs3505::string_set new_set;
 
   new_set.add("dicks");
+  std::cout << new_set.contains("dick");
   //new_set.add("dart");
 
-  std::string dicks = "dicks";
-
-  std::cout << dicks.compare("fart") << std::endl; 
   return 0;
 }
